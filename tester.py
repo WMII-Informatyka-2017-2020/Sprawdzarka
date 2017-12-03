@@ -9,8 +9,8 @@ for test in tests:
     print( '\n--------------------------' )
     print( 'TEST: ' + test + '\n' )
     
-	os.system( compile_command + ' ' + test + '.cpp -o ' + test + '.exe' )
-	os.system( test + '.exe' )
+    os.system( compile_command + ' ' + test + '.cpp -o ' + test + '.exe' )
+    os.system( test + '.exe' )
 
     if test != 'test_max_over':
         os.system( test + '.exe < input_' + test + '.txt' )
